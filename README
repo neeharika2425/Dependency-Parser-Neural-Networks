@@ -1,0 +1,32 @@
+==========================================================================================
+
+         Introduction to Natural Laguage Processing Assignment 2
+ 
+==========================================================================================
+
+1. In this assignment, you will be asked to:
+
+  From Incrementality in Deterministic Dependency Parsing(2004, Nivre)
+  - Implemented the arc-standard algorithm
+
+  From A Fast and Accurate Dependency Parser using Neural Networks(2014, Danqi and Manning) 
+  - Implemented feature extraction
+  - Implemented the neural network architecture including activation function
+  - Implemented loss function
+
+
+3. What you should do:
+  1. Implemented the arc-standard algorithm in ParsingSystem.py
+  -apply function is implemented, to find the next configuration      
+  2. Implement feature extraction in DependencyParser.py
+  - implemented getfeatures to generate 48 features for each configuration
+  3. Implement neural network architecture including activation function
+  - graph with 1/2 hidden layers is built and tried out diffent activation functions
+  4. Implement loss function and calculate loss value
+  - implemented the loss given in the paper i.e softmax cross entrpy + l2 regularizer loss
+
+Have changed the fowwing files:
+  1. DependencyParser.py
+  2. ParsingSystem.py 
+  3. Config.py: Added hidden layer2 size and tried by increasing the max-itrerations
+
